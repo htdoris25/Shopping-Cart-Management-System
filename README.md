@@ -1,4 +1,7 @@
 # Grocery Store Management Application
+
+[![Java CI with Maven](https://github.com/htdoris25/GroceryApp/actions/workflows/maven.yml/badge.svg)](https://github.com/htdoris25/GroceryApp/actions/workflows/maven.yml)
+
 ## Overview
 The Grocery Store Management Application is a JavaFX-based desktop application designed to simulate a grocery store's cart and checkout system. This project demonstrates the use of JavaFX for building user interfaces, SQLite for database management, and JSON (via Gson) for data serialization and deserialization. The application provides a seamless user experience for managing grocery carts, saving and loading cart data, and handling user authentication.
 
