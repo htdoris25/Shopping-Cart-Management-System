@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ws7.SavedCartsController">
+    <TableView fx:id="savedCartsTable">
+        <columns>
+            <TableColumn fx:id="cartNumberColumn" text="Cart Number" />
+            <TableColumn fx:id="priceColumn" text="Price" />
+        </columns>
+    </TableView>
+    <Button fx:id="loadCartButton" text="Load Cart" onAction="#loadSelectedCartFromDatabase" />
+
+</VBox>

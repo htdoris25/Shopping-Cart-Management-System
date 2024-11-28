@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.ws7.LoginController" spacing="15" alignment="CENTER" stylesheets="@style.css">
+    <HBox alignment="CENTER_LEFT" spacing="10">
+    <Label text="Name:" />
+    <TextField fx:id="usernameField" promptText="Enter your name" />
+</HBox>
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Label text="Password:" />
+        <PasswordField fx:id="passwordField" promptText="Enter your password" />
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Login" onAction="#handleLogin" />
+        <Button text="Register" onAction="#openRegisterWindow" />
+    </HBox>
+</VBox>
+
