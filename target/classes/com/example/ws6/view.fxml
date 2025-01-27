@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ws6.Cart" stylesheets="@style.css">
+    <top>
+        <HBox alignment="CENTER" spacing="15" style="-fx-padding: 10; -fx-background-color: #f0f0f0; -fx-border-color: #ccc; -fx-border-width: 0 0 1 0;">
+            <ComboBox fx:id="itemsComboBox" promptText="Select item" />
+            <Label text="Select units:" style="-fx-font-size: 14;" />
+            <Slider fx:id="quantitySlider" min="1" max="10" majorTickUnit="1" minorTickCount="0" snapToTicks="true" showTickLabels="true" showTickMarks="true" />
+            <Label fx:id="purchasedUnitsLabel" text="1" style="-fx-font-size: 14;" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 15;">
+            <HBox alignment="CENTER" spacing="30">
+                <VBox alignment="CENTER">
+                    <Label text="Unit:" style="-fx-font-size: 14;" />
+                    <Label fx:id="unitValueLabel" text="0.00" style="-fx-font-size: 16; -fx-text-fill: blue;" />
+                </VBox>
+                <VBox alignment="CENTER">
+                    <Label text="Price/unit:" style="-fx-font-size: 14;" />
+                    <Label fx:id="unitPriceValueLabel" text="0.00" style="-fx-font-size: 16; -fx-text-fill: blue;" />
+                </VBox>
+                <VBox alignment="CENTER">
+                    <Label text="Purchased Units:" style="-fx-font-size: 14;" />
+                    <Label fx:id="purchasePriceValueLabel" text="0.00" style="-fx-font-size: 16; -fx-text-fill: blue;" />
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15">
+                <Button fx:id="addButton" text="Add to Cart" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+                <Button fx:id="removeButton" text="Remove from Cart" style="-fx-background-color: #F44336; -fx-text-fill: white;" />
+                <Button fx:id="saveCartButton" text="Save Cart" style="-fx-background-color: #2196F3; -fx-text-fill: white;" />
+                <Button fx:id="viewSavedCartsButton" text="View Saved Carts" style="-fx-background-color: #9C27B0; -fx-text-fill: white;" />
+            </HBox>
+            <TableView fx:id="cartTableView" prefHeight="200" style="-fx-border-color: #ccc; -fx-padding: 10;">
+                <columns>
+                    <TableColumn fx:id="nameColumn" text="Item Name" />
+                    <TableColumn fx:id="purchasedUnitsColumn" text="Purchased Units" />
+                    <TableColumn fx:id="purchasePriceColumn" text="Purchase Price" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 10; -fx-background-color: #f9f9f9; -fx-border-color: #ccc; -fx-border-width: 1 0 0 0;">
+            <Label fx:id="totalAmountLabel" text="Total: $0.00" style="-fx-font-weight: bold; -fx-font-size: 16;" />
+        </HBox>
+    </bottom>
+</BorderPane>
+

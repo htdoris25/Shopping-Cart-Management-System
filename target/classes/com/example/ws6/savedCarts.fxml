@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ws6.SavedCartsController" spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    <Label text="Saved Carts" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+    <TableView fx:id="savedCartsTable" prefHeight="200" prefWidth="300">
+        <columns>
+            <TableColumn fx:id="cartNumberColumn" text="Cart Number" />
+            <TableColumn fx:id="priceColumn" text="Price" />
+        </columns>
+    </TableView>
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="loadCartButton" text="Load Cart" onAction="#loadSelectedCartFromDatabase" />
+        <Button fx:id="checkoutButton" text="Checkout" onAction="#checkoutSelectedCarts" />
+    </HBox>
+</VBox>
+
+
+
