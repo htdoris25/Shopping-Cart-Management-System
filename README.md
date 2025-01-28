@@ -1,7 +1,14 @@
 # Shopping Cart Management System
-<img width="777" alt="MainCart" src="https://github.com/user-attachments/assets/fe081923-b83c-4334-93a1-6d51b2a5a727" />
+<img width="777" alt="MainCart" src="https://github.com/user-attachments/assets/fe081923-b83c-4334-93a1-6d51b2a5a727" />  
 
 The **JavaFX Login, Registration, and Shopping Cart Management System** is a user-friendly desktop application integrating secure authentication and shopping cart management. Users can log in with credentials validated against an SQLite database or register for a new account. The shopping cart feature allows users to add, remove, and save items, view saved carts, and perform checkouts with confirmation prompts. After checkout, selected carts are automatically deleted. The application provides interactive alerts for success and error messages, ensuring a smooth user experience. Built with JavaFX and following the MVC architecture, it offers clean, modular, and maintainable code for robust functionality.# Features
+
+## Technologies Used
+- **JavaFX**: For creating the graphical user interface.
+- **SQLite**: To manage cart and item data persistently.
+- **Gson**: For serializing and deserializing cart data into JSON format.
+- **Maven**: For dependency management and building the project.
+
 ## Login / Register
 - LoginController, RegisterController, login.fxml, register.fxml
 - Validates credentials using validateLogin method.
@@ -29,10 +36,5 @@ Transitions to the shopping cart window on successful login.
   <img width="421" alt="CheckOutSucess" src="https://github.com/user-attachments/assets/9d263ea4-aeb6-4b3e-be49-d240aeba74a0" />
 
   
-## Technologies Used
-- JavaFX: For creating the graphical user interface.
-- SQLite: To manage cart and item data persistently.
-- Gson: For serializing and deserializing cart data into JSON format.
-- Maven: For dependency management and building the project.
 
 
